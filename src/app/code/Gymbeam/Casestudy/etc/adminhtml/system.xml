@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/system_file.xsd">
+    <system>
+        <tab id="gymbeam" translate="label">
+            <label>GymBeam</label>
+        </tab>
+        <section id="greeting" translate="label">
+            <label>Greeting</label>
+            <group id="general" translate="label" type="text">
+                <label>General Configuration</label>
+                <field id="enable" translate="label" type="select">
+                    <label>Module Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="display_text" translate="label" type="text">
+                    <label>Display Text</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
